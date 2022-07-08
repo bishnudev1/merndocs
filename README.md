@@ -947,3 +947,9 @@ If user is already logged in then we don't show the Register & Login Button in N
   }
 ```
 - I cut off Home, About, Contact Button From Navbar to Short The Code Documentation. It will be added defaulty in both state = true & false cases.
+
+### Run The App
+- Install Node Modules ```npm i```
+- Run The Server ```node server.js```
+- Run The Client ```npm start```
+- Acess ```http://localhost:3000/```
