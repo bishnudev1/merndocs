@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dark-bg{
+    background-color: rgb(28, 26, 26);
+    color: white;
+}
+.text-span-color{
+    color: yellowgreen;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.flex-column-only{
+    flex-direction: column;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 40px;
+    width: 60%;
+}
+.submit-button{
+    outline: none;
+    border: none;
+    background-color: grey;
+    padding: 6px;
+    margin-block: 15px;
+    color: black;
+    text-align: center;
+}
+.flex-center-center-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    height: 30px;
+    margin-block: 4px;
+    /* border: none; */
+    outline: none;
+    padding: 3px;
+    border: 1 px solid grey;
+}
+input::placeholder {
+    font-size: 14px;
+    color: #888;
+}
+textarea{
+    margin-block: 4px;
+    height: 120px;
+    outline: none;
+    padding: 3px;
+    border: 1 px solid grey;
+}
+.sub-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid grey;
+    padding-block: 25px;
+    padding-inline: 15px;
+}
+.about-dp{
+    height: 200px;
+    /* border-radius: 10px; */
+    /* border: 1px solid gray; */
+}
+li{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul{
+    list-style: none;
+}
+.userdetails-head-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.z-index{
+    z-index: 11;
+}
+a{
+    text-decoration: none;
+}
+.home-dashboard-button{
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: grey;
+}
+@media only screen and (max-width: 600px){
+    .flex-column{
+        width: 100%;
+    }
+    .sub-container{
+        width: 100%;
+        padding-block: 15px;
+        padding-inline: 5px;
+    }
+    .about-dp{
+        height: 150px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .userdetails-head-text,p{
+        font-size: 14px;
+    }
+    li{
+        font-size: 15px;
+    }
+}
